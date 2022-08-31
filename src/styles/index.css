@@ -1,0 +1,238 @@
+header {
+    border-bottom: 2px solid var(--gray-4);
+    height: 60px;
+}
+
+.header_flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+}
+
+.header_title {
+    margin: 7px;
+    color: var(--primary-color);
+    font-family: var(--font);
+    font-weight: 600;
+    margin-left: 30px;
+}
+
+.close_menu {
+    display: none;
+}
+
+
+.x_close {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin: 7px;
+    color: var(--gray-3);
+    font-family: var(--font);
+    margin-right: 30px;
+    cursor: pointer;
+    animation: transition 1s forwards;
+}
+
+.img_btn {
+    cursor: pointer;
+    animation: transition 1s forwards;
+}
+
+
+
+
+.header_secao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header_flex_link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header_link {
+    border-bottom: 1px solid var(--gray-4);
+    padding: 26px;
+    font-family: var(--font);
+}
+
+.header_link_all {
+    border-bottom: 1px solid var(--gray-4);
+    padding: 26px;
+    font-family: var(--font);
+    background-color: var(--gray-6);
+    color: var(--gray-1);
+    font-weight: bold;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.input_header {
+    width: 90vw;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--gray-5);
+    height: 40px;
+}
+
+.input_header::placeholder {
+    padding: 8px;
+}
+
+.photo_username {
+    display: flex;
+    align-items: center;
+    margin-left: -45vw;
+}
+
+
+.img-erik {
+    border-radius: 50%;
+    width: 38px;
+    height: 38px;
+    border: var(--primary-color) 2px solid;
+    margin: 10px;
+}
+
+.username {
+    font-family: var(--font);
+
+}
+
+
+
+.section_menu {
+    animation: growDown 400ms ease-in-out forwards;
+    transform-origin: top center;
+}
+
+.close_transition {
+    animation: close 400ms ease-in-out;
+    transform-origin:  top center;
+}
+
+
+@keyframes close {
+    0% {
+        opacity: 1;
+        transform: rotateX(0deg);
+    }
+
+    50% {
+        transform: rotateX(-20deg);
+    }
+
+    100% {
+        opacity: 0;
+        transform: rotateX(-90deg);
+    }
+}
+
+
+
+@keyframes growDown {
+    0% {
+        opacity: 0;
+        transform: rotateX(-90deg);
+    }
+
+    50% {
+        transform: rotateX(-20deg);
+    }
+
+    100% {
+        opacity: 1;
+        transform: rotateX(0deg);
+    }
+}
+
+
+
+@media (min-width:768px) {
+   
+    .header_flex_link {
+        flex-direction: row;
+        position: relative;
+        bottom: 42px;
+        left: 8px;
+        margin: 5px;
+        width: 97vh;
+        border-bottom: none;
+        gap: 15px;
+    }
+
+    .header_link {
+        padding: 0px;
+        border: none;
+    }
+
+    .header_link_all {
+        padding: 0px;
+        border: none;
+        background-color: none;
+        font-weight: bold;
+    }
+
+    .search {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        top: 9.5px;
+        right: 0;
+        margin-right: 90px;
+        flex-direction: row;
+        margin-top: 0px
+    }
+
+    .photo_username {
+        position: absolute;
+        top: 0px;
+        bottom: 0;
+        left: 0;
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+
+    .input_header{
+        width: 260px;
+    }
+
+    .img-erik {
+        position: absolute;
+        left: 270px;
+    }
+
+    .username {
+        display: none;
+    }
+
+    .section_menu {
+        display: inline;
+    }
+
+    .close_menu {
+        display: inline;
+    }
+
+    .img_btn {
+        display: none;
+    }
+
+    .x_close{
+        display: none;
+    }
+    
+
+}
+
+
+
