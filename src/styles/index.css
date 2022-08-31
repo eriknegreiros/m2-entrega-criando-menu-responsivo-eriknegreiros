@@ -230,6 +230,12 @@ header {
     .x_close{
         display: none;
     }
+
+    .close_transition {
+        animation: none;
+        transform-origin:  none
+    }
+    
     
 
 }

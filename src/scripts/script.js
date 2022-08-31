@@ -11,7 +11,7 @@ class menuResponse {
             xClose.classList.remove('close_menu')
             
             section.classList.remove('close_menu')
-
+            section.classList.remove('close_transition')
             xClose.addEventListener('click', () => {
                 
 
